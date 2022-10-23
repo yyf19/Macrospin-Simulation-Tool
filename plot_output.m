@@ -1,4 +1,5 @@
 %% 
+% visualization of phase diagram or trajectory @author: yyf
 clear all;
 contain_zero = 0; % If have mz_eta0 for eta=0, set this para. as 1. Else set as 0.
 fileId=fopen('mz.txt','r');
@@ -9,7 +10,6 @@ if (contain_zero)
   mz0=fscanf(fileId0,'%f ');
   fclose(fileId0);
 end
-
 %------------------------------------------------------------------------
 % modify these paramters according to the simulation
 eta_start = 0.1;
