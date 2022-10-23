@@ -1,4 +1,10 @@
 #include "helper_math.h"
+
+/*
+header file containing parameters that can be changed before simulation
+@author: yyf
+*/
+
 // cgs unit
 // deltat should be smaller than 1e-14 when using Euler method. Should be smaller than 1e-12 when using Heun method.
 // If not consider thermal effect, change T to 0 and thermal_step to 1;

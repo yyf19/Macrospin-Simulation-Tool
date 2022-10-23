@@ -4,6 +4,10 @@
 #include "helper_math.h"
 #include "header.h"
 
+/*
+CUDA kernel that computes magnetization dynamics based on LLG equation
+@author: yyf
+*/
 
 __global__ void macrospin_kernel_Euler(
     float3 Mini, float etastart, float etaend, int etastep, float Jstart, float Jend, int Jstep, float3 Hexternal, float3 Anisotropy, float* mz, int num_tot) {

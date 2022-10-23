@@ -4,6 +4,11 @@
 #include "helper_math.h"
 #include "header.h"
 
+/*
+main function that runs the kernel with a timer
+@author: yyf
+*/
+
 extern "C"
 void computeGold(float* mz_c, int num_tot);
 void computeTime(float* m_x, float* m_y, float* m_z);
